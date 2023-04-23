@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <video autoplay loop muted plays-inline class="back__vid">
+        <source src="/videos/yama-video.mp4">
+    </video>
     <nav class="navbar">
         <div class="navbar__container">
-            <img src="/images/yama-logo.png"/>
+            <a href="/" id="navbar__logo"><img src="/images/yama-logo.png" width="65"/></a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -18,19 +21,31 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">home</a>
+                    <a href="/" class="navbar__links">HOME</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">about</a>
+                    <a href="/about.html" class="navbar__links">ABOUT</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/menu.html" class="navbar__links">menu</a>
+                    <a href="/menu.html" class="navbar__links">MENU</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">order now</a>
+                    <a href="/" class="button">ORDER NOW</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <div class="hero"></div>
+
+    <div class="main">
+        <div class="main__container">
+            <h1 class="main__heading">FRESH SUSHI DELIVERED DAILY</h1>
+            <p class="main__description">open daily from 11am-7pm</p>
+            <button class="main__btn"><a href="/">get directions</a></button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
