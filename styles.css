@@ -2,16 +2,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Mandali', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .navbar {
-    background-color: #303031;
+    background-color: #202024;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -128,7 +128,7 @@
     }
 
     .navbar__menu.active {
-        background:#303031;
+        background:#202024;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -230,30 +230,171 @@
 }
 
 .main {
-    background-color: #C25528;
+    background-color: #202024;
 }
 
 .main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #202024;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0px 50px;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    background-size: 100%;
+}
+
+.main__content h2 {
+    font-size: 4rem;
+    background-size: 100%;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #d3b793, 0px 0px 10px #d3b593, 0px 0px 10px #d3b793,
+      0px 0px 20px #d3b593;
+}
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color:#f3cbb9;
+}
+
+.main__btn {
+    font-size: 1rem;
+    background-color: #ffffff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #303031;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #C25528;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #e3af98;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color:#e3af98;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
+.main__img--container {
+    text-align: center;
+}
+
+#main__img {
+    height: 80%;
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__content h1 {
+        font-size: 3rem;
+    }
+
+    .main__content p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-wdith:480px) {
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content h1 {
+        font-size: 2rem;
+    }
+
+    .main__content p {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
+
+/* .services {
+    background-color: #202024;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 90%;
-    text-align: center;
-    padding: 30px;
+    height: 100vh;
 }
 
-.main__heading {
-    font-size: 60px;
-    margin-bottom: 24px;
+.services h1 {
     color: white;
+    text-shadow: 1px 1px 1px #c4542c,
+             1px 2px 1px #c4542c,
+             1px 3px 1px #c4542c,
+             1px 4px 1px #c4542c,
+             1px 5px 1px #c4542c,
+             1px 6px 1px #c4542c,
+             1px 10px 5px rgba(16, 16, 16, 0.5),
+             1px 15px 10px rgba(16, 16, 16, 0.4),
+             1px 20px 30px rgba(16, 16, 16, 0.3),
+             1px 25px 50px rgba(16, 16, 16, 0.2);
 }
 
-.main__description {
-    font-size: 30px;
-    margin-bottom: 24px;
-    color: white;
-}
-
+.services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
