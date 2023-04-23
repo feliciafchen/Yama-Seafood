@@ -24,15 +24,15 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="navbar__menu">
+            <ul class="navbar__menu" id="nav-menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">HOME</a>
+                    <a href="#home" class="navbar__links active-link">HOME</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links">ABOUT</a>
+                    <a href="#about" class="navbar__links">ABOUT</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/menu.html" class="navbar__links">MENU</a>
+                    <a href="#platters" class="navbar__links">MENU</a>
                 </li>
                 <li class="navbar__btn">
                     <a href="https://www.yamaseafoodla.com/s/order" class="button">ORDER NOW</a>
@@ -98,7 +98,118 @@
             </div>
             <img src="img/leaf-branch-1.png" alt="" class="about__leaf">
         </section>
+
+        <section class="sushi platters" id="platters">
+            <span class="section__subtitle">For Your Next Get-Together</span>
+            <h2 class="section__title">Our Sushi Platters</h2>
+
+            <div class="platters__container container grid">
+                <article class="platters__card">
+                    <img src="/images/yama-classic.jpeg" alt="" class="platters__img">
+                    <h3 class="platters__name">Yama Classic</h3>
+                    <span class="platters__description">Platter 1</span>
+
+                    <span class="platters__price">$39.00</span>
+                </article>
+                <article class="platters__card">
+                    <img src="/images/yama-cali-lovers.jpeg" alt="" class="platters__img">
+                    <h3 class="platters__name">Cali Lovers Platter</h3>
+                    <span class="platters__description">Platter 1</span>
+
+                    <span class="platters__price">$39.00</span>
+                </article>
+                <article class="platters__card">
+                    <img src="/images/yama-deluxe-platter.png" alt="" class="platters__img">
+                    <h3 class="platters__name">Deluxe Platter</h3>
+                    <span class="platters__description">Platter 1</span>
+
+                    <span class="platters__price">$55.00</span>
+                </article>
+            </div>
+        </section>
     </main>
-    <script src="app.js"></script>
+
+<footer class="footer">
+    <div class="footer__container container grid">
+        <div>
+            <a href="#" class="footer__logo">
+                <img src="/images/yama-logo.png"/>
+                Yama Seafood
+            </a>
+
+            <p class="footer__description">
+                Sushi | Sake | Attitude
+            </p>
+        </div>
+
+        <div class="footer__content">
+            <div>
+                <h3 class="footer__title">Main Menu</h3>
+                <ul class="footer__links">
+                    <li class="footer__link">
+                        <a href="#home" class="footer__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#about" class="footer__link">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#platters" class="footer__link">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#" class="footer__link">
+                            Order Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer__title">Address</h3>
+                <ul class="footer__links">
+                    <li class="footer__information">
+                        911 W Las Tunas Dr <br>
+                        San Gabriel, CA 91776
+                    </li>
+                    <li class="footer__information">
+                        11AM-7PM
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer__title">Social Media</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/yamaseafoodla" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yamaseafoodla/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="yamaseafoodla@gmail.com" target="_blank" class="footer__social-link">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <img src="img/leaf-branch-4.png" alt="" class="footer__leaf">
+    </div>
+    <div class="footer__info container">
+        <spn class="footer__copy">
+            Unofficial website created by Felicia Chen.
+        </spn>
+    </div>
+</footer>
+
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line"></i>
+</a>
+
+
+<script src="app.js"></script>
 </body>
 </html>
