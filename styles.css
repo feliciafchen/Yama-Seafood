@@ -581,6 +581,14 @@ img {
     .about__title img{
         width: 50px;
     }
+
+    .about__img {
+        width: 450px;
+    }
+
+    .platters__container{
+        
+    }
 }
 
 .navbar {
