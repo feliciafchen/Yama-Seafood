@@ -15,10 +15,7 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body class="back">
-    <video autoplay loop muted plays-inline class="back__vid">
-        <source src="/videos/yama-video.mp4">
-    </video>
+<body>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo"><img src="/images/yama-logo.png" width="65"/></a>
@@ -44,25 +41,62 @@
         </div>
     </nav>
 
-    <div class="hero"></div>
+    <div class="hero">
+        <video id="glass" autoplay loop muted plays-inline>
+            <source src="/videos/yama-video.mp4">
+        </video>
+    </div>
 
     <main class="main">
         <section class="home section" id="home">
             <div class="home__container container grid">
-                <img src = "images/yama-sushi.jpg" class="home__img">
+                <img src="img/home-sushi-rolls.png" alt="home image" class="home__img">
                 <div class="home__data">
                     <h1 class="home__title">
                         FRESH SUSHI
 
                         <div>
-                            DELIVERED DAILY
+                            <img src="/img/home-sushi-title.png" alt="home image">
+                            Delivered Daily
                         </div>
                     </h1>
+
+                    <p class="home__description">
+                        Open daily from 11AM-7PM.
+                    </p>
+
+                    <a href="#" class="button">
+                        Order Now <i class="ri-arrow-right-line"></i>
+                    </a>
                 </div>
             </div>
-        </section>
-        <section class="about section" id="about">
 
+            <img src="/img/leaf-branch-2.png" alt="" class="home__leaf-1">
+            <img src="/img/leaf-branch-4.png" alt="" class="home__leaf-2">
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <span class="section__subtitle">About Us</span>
+                    <h2 class="section__title about__title">
+                        <div>
+                            Our
+                            <img src="img/about-sushi-title.png" alt="">
+                        </div>
+
+                        Story
+                    </h2>
+                    <p class="about__description">
+                    For the past 38 years, Yama Seafood has been a terrific quick-service sushi spot for the community. The family-run business has offered SGV residents 
+                    enormous pre-ordered platters of maki for parties and large gatherings, plus freshly cut trays of affordable sashimi and California rolls. Mr. Yama's Quote: 
+                    “this (Yama Seafood) started in 1984 and the most important thing to me is that this business keeps running…
+                    </p>
+                </div>
+
+                <img src="img/about-sushi.png" alt="" class="about__img">
+            </div>
+            <img src="img/leaf-branch-1.png" alt="" class="about__leaf">
         </section>
     </main>
     <script src="app.js"></script>

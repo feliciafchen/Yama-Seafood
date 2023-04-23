@@ -14,7 +14,6 @@ menu.addEventListener('click', function() {
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
-
 /*=============== SHOW SCROLL UP ===============*/ 
 
 

@@ -135,12 +135,129 @@ img {
 
 /*=============== HOME ===============*/
 
+.home {
+    position: relative;
+}
+
+.home__container {
+    row-gap: 3rem;
+    padding-top: 2rem;
+}
+
+.home__img {
+    width: 300px;
+    justify-self: center;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+    font-family: var(--title-font);
+    margin-bottom: 1rem;
+}
+
+.home__title img {
+    width: 40px;
+}
+
+.home__title div {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: .5rem;
+}
+
+.home__description {
+    padding: 0 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.home__leaf-1,
+.home__leaf-2 {
+    position: absolute;
+    opacity: .2;
+}
+
+.home__leaf-1 {
+    width: 80px;
+    top: 8rem;
+    left: -1rem;
+    transform: rotate(90deg);
+}
+
+.home__leaf-2 {
+    width: 100px;
+    right: -2rem;
+    bottom: 1rem;
+    transform: rotate(-15);
+}
 
 /*=============== BUTTON ===============*/
 
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--first-color);
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    color:white;
+    font-weight: var(--font-medium);
+}
 
+.button i{
+    font-size: 1.5rem;
+    transition: transform .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button:hover i{
+    transform: translateX(.25rem);
+}
 /*=============== ABOUT ===============*/
 
+.about {
+    position: relative;
+}
+
+.about__container {
+    row-gap: 3rem;
+}
+
+.about__data{
+    text-align: center;
+}
+
+.about__title img{
+    width: 30px;
+}
+
+.about__title div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.about__img{
+    width: 300px;
+    justify-self: center;
+}
+
+.about__leaf{
+    width: 100px;
+    opacity: .2;
+    position: absolute;
+    right: -1.5rem;
+    bottom: 11rem;
+    transform: rotate(-15deg);
+}
 
 /*=============== POPULAR ===============*/
 
@@ -172,19 +289,8 @@ img {
 
 /* For large devices */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
-}
-
-.back {
-    background-color: #202024;
-}
-
 .navbar {
-    background-color: #202024;
+    background-color: #180c0c;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -255,20 +361,20 @@ img {
     width: 100%;
 }
 
-.button {
+/* .button {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     padding: 10px 20px;
-    height: 100%;
-    width: 100%;
+    height: 50px;
+    width: 200px;
     border: none;
     outline: none;
     border-radius: 4px;
     background: #C25528;
     color:white;
-}
+} */
 
 .button:hover {
     background: #884035;
@@ -302,11 +408,11 @@ img {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: black;
+        background: #180c0c;
     }
 
     .navbar__menu.active {
-        background:#202024;
+        background:#180c0c;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -349,13 +455,13 @@ img {
         padding-bottom: 2rem;
     }
 
-    .button {
+    /* .button {
         display: flex;
         justify-content: center;
         align-items:center;
         width: 50%;
         margin: 0;
-    }
+    } */
 
     .navbar__toggle .bar {
         display: block;
@@ -396,297 +502,13 @@ img {
 }
 
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    text-align: center;
-    padding: 300px;
-}
-
-.main {
-    background-color: #202024;
-}
-
-.main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
-    background-color: #202024;
-    z-index: 1;
     width: 100%;
-    max-width: 1300px;
-    padding: 0px 50px;
+    overflow: hidden;
+    display: block;
+    height: 400px;
 }
 
-.main__content h1 {
-    font-size: 4rem;
-    color: #ffffff;
-    background-size: 100%;
-}
-
-.main__content h2 {
-    font-size: 4rem;
-    background-size: 100%;
-    font-weight: 600;
-    color: #fdfdfe;
-    text-shadow: 0px 0px 5px #d3b793, 0px 0px 10px #d3b593, 0px 0px 10px #d3b793,
-      0px 0px 20px #d3b593;
-}
-
-.main__content p {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color:#f3cbb9;
-}
-
-.main__btn {
-    font-size: 1rem;
-    background-color: #ffffff;
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: #303031;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-}
-
-.main__btn a {
-    position: relative;
-    z-index: 2;
-    color: #C25528;
-    text-decoration: none;
-}
-
-.main__btn:after {
-    position: absolute;
-    content: '';
-    top:0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #e3af98;
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-
-.main__btn:hover {
-    color:#e3af98;
-}
-
-.main__btn:hover:after {
-    width: 100%;
-}
-
-.main__img--container {
-    text-align: center;
-}
-
-#main__img {
-    height: 80%;
-    width: 80%;
-}
-
-@media screen and (max-width: 768px) {
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }
-
-    .main__content {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    .main__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    .main__content h1 {
-        font-size: 3rem;
-    }
-
-    .main__content p {
-        font-size: 1rem;
-        margin-top: 1.5rem;
-    }
-}
-
-@media screen and (max-wdith:480px) {
-    .main__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-
-    .main__content h1 {
-        font-size: 2rem;
-    }
-
-    .main__content p {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-    }
-
-    .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    }
-}
-
-.hero__text h1 {
-    color: white;
-    font-size: 5rem;
-    text-align: center;
-
-    text-shadow: 1px 1px 1px #c4542c,
-             1px 2px 1px #c4542c,
-             1px 3px 1px #c4542c,
-             1px 4px 1px #c4542c,
-             1px 5px 1px #c4542c,
-             1px 6px 1px #c4542c;
-    
-    padding: 35px 0px;
-}
-
-.hero__image {
-    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url(/images/yama-bamboo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    background-color: #202024;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    padding: 100px 0px;
-}
-
-.menu h1{
-    font-size: 2.5rem;
-    background-size: 100%;
-    font-weight: 600;
-    color: #fdfdfe;
-    text-shadow: 0px 0px 5px #d3b793, 0px 0px 10px #d3b593, 0px 0px 10px #d3b793,
-      0px 0px 20px #d3b593;
-    margin-bottom: 3rem;
-}
-
-.menu__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.menu__card {
-    margin: 1.5rem;
-    height: 500px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0) 0%,
-        rgba(17,17,17,0.6) 100%
-    ),
-    url(/images/yama-classic.jpeg);
-    background-size: cover;
-    position: relative;
-    color:#ffffff;
-}
-
-.menu__card:nth-child(2) {
-    margin: 1.5rem;
-    height: 500px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0) 0%,
-        rgba(17,17,17,0.6) 100%
-    ),
-    url(/images/yama-cali-lovers.jpeg);
-    background-size: cover;
-    position: relative;
-    color:#ffffff;
-}
-
-.menu__card:nth-child(3) {
-    margin: 1.5rem;
-    height: 500px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0) 0%,
-        rgba(17,17,17,0.6) 100%
-    ),
-    url(/images/yama-deluxe-platter.png);
-    background-size: cover;
-    position: relative;
-    color:#ffffff;
-}
-
-.menu h2 {
-    position:relative;
-    
-}
-
-.menu__card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.menu__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 960px) {
-    .menu {
-        height: 1600px;
-    }
-
-    .menu h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .menu {
-        height: 1400px;
-    }
-
-    .menu h1 {
-        font-size: 1.2rem;
-    }
-
-    .menu__card {
-        width: 300px;
-    }
+#glass {
+    margin-top: -200px;
 }
 
