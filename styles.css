@@ -5,6 +5,10 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.back {
+    background-color: #202024;
+}
+
 .navbar {
     background-color: #202024;
     height: 100px;
@@ -371,30 +375,144 @@
     }
 }
 
-/* .services {
-    background-color: #202024;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.services h1 {
+.hero__text h1 {
     color: white;
+    font-size: 5rem;
+    text-align: center;
+
     text-shadow: 1px 1px 1px #c4542c,
              1px 2px 1px #c4542c,
              1px 3px 1px #c4542c,
              1px 4px 1px #c4542c,
              1px 5px 1px #c4542c,
-             1px 6px 1px #c4542c,
-             1px 10px 5px rgba(16, 16, 16, 0.5),
-             1px 15px 10px rgba(16, 16, 16, 0.4),
-             1px 20px 30px rgba(16, 16, 16, 0.3),
-             1px 25px 50px rgba(16, 16, 16, 0.2);
+             1px 6px 1px #c4542c;
+    
+    padding: 35px 0px;
 }
 
-.services__container {
+.hero__image {
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url(/images/yama-bamboo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: #202024;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 100px 0px;
+}
+
+.menu h1{
+    font-size: 2.5rem;
+    background-size: 100%;
+    font-weight: 600;
+    color: #fdfdfe;
+    text-shadow: 0px 0px 5px #d3b793, 0px 0px 10px #d3b593, 0px 0px 10px #d3b793,
+      0px 0px 20px #d3b593;
+    margin-bottom: 3rem;
+}
+
+.menu__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-} */
+}
+
+.menu__card {
+    margin: 1.5rem;
+    height: 500px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(17,17,17,0.6) 100%
+    ),
+    url(/images/yama-classic.jpeg);
+    background-size: cover;
+    position: relative;
+    color:#ffffff;
+}
+
+.menu__card:nth-child(2) {
+    margin: 1.5rem;
+    height: 500px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(17,17,17,0.6) 100%
+    ),
+    url(/images/yama-cali-lovers.jpeg);
+    background-size: cover;
+    position: relative;
+    color:#ffffff;
+}
+
+.menu__card:nth-child(3) {
+    margin: 1.5rem;
+    height: 500px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(17,17,17,0.6) 100%
+    ),
+    url(/images/yama-deluxe-platter.png);
+    background-size: cover;
+    position: relative;
+    color:#ffffff;
+}
+
+.menu h2 {
+    position:relative;
+    
+}
+
+.menu__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.menu__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .menu {
+        height: 1600px;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .menu {
+        height: 1400px;
+    }
+
+    .menu h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu__card {
+        width: 300px;
+    }
+}
+
