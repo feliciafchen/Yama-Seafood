@@ -42,8 +42,9 @@ const sr = ScrollReveal({
     delay: 400,
 })
 sr.reveal(`.home__img, .gallery__container, .footer__logo, .footer__description,
-            .footer__content, .footer__info, .platters .section__subtitle, .platters .section__title`)
+            .footer__content, .footer__info, .platters .section__subtitle, .platters .section__title, .hero__img, .hero__text`)
 sr.reveal(`.home__data`, {origin: 'bottom'})
 sr.reveal(`.about__data`, {origin: 'left'})
 sr.reveal(`.about__img`, {origin: 'right'})
 sr.reveal(`.platters__card`, {interval: 100})
+sr.reveal(`.photos img`, {interval: 100})
