@@ -923,7 +923,7 @@ img {
 }
 
 .hero__image {
-    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url(/images/yama-bamboo.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url(images/yama-bamboo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
