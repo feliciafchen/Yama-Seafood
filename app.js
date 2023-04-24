@@ -14,15 +14,16 @@ menu.addEventListener('click', function() {
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
+const scrollHeader = () => {
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('bg-header')
+                        : header.classList.remove('bg-header')
+
+                    }
+
+window.addEventListener('scroll', scrollHeader)
+
 /*=============== SHOW SCROLL UP ===============*/ 
-
-const scrollUp = () => {
-    const scrollup = document.getElementById('scroll-up')
-    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
-                        : scrollUp.classList.remove('show-scroll')
-}
-
-window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
@@ -57,7 +58,7 @@ const sr = ScrollReveal({
     duration: 2500,
     delay: 400,
 })
-sr.reveal(`.home__img, .footer__logo, .footer__description,
+sr.reveal(`.home__img, .gallery__container, .footer__logo, .footer__description,
             .footer__content, .footer__info`)
 sr.reveal(`.home__data`, {origin: 'bottom'})
 sr.reveal(`.about__data`, {origin: 'left'})
