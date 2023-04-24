@@ -239,6 +239,7 @@ img {
 .about__img{
     width: 300px;
     justify-self: center;
+    padding-bottom: 10rem;
 }
 
 .about__leaf{
@@ -262,14 +263,18 @@ img {
 .platters__card {
     position: relative;
     background-color: var(--container-color);
-    padding: 7rem 2rem 1.5 rem;
-    box-shadow: 0 8px 20px hsla(19, 64%, 48%, .08);
+    padding: 10rem 2rem 1.5rem;
+    box-shadow: 0 8px 20px hsla(19, 64%, 48%, .15);
     border-radius: 1rem;
     text-align: center;
 }
 
 .platters__img {
-    width: 220px;
+    width: 175px;
+    position: absolute;
+    inset: 0;
+    top: -2.5rem;
+    margin: 0 auto;
     transition: transform .4s;
 }
 
@@ -292,7 +297,7 @@ img {
 }
 
 .platters__card:hover .platters__img {
-    transform: translateY(-.25rem);
+    transform: translateY(-.5rem);
 }
 
 /*=============== RECENTLY ===============*/
@@ -591,13 +596,6 @@ img {
         column-gap: 3.5rem;
         padding-block: 6rem 4rem;
     }
-    .platters__card{
-        padding: 7.5rem 2rem 2rem;
-        border-radius: 1.5rem;
-    }
-    .platters__img{
-        width: 230px;
-    }
 
     .footer{
         padding-block: 8rem 3rem;
@@ -605,7 +603,7 @@ img {
 
     .footer__container{
         position: relative;
-        grid-template-columns: repeat(2, mmax-content);
+        grid-template-columns: repeat(2, max-content);
         justify-content: space-between;
     }
 
@@ -639,6 +637,7 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+
     .home__leaf-1 {
         width:150px;
         top: 5rem;
