@@ -6,14 +6,6 @@ menu.addEventListener('click', function() {
     menuLinks.classList.toggle('active');
 })
 
-/*=============== SHOW MENU ===============*/
-
-
-/*=============== REMOVE MENU MOBILE ===============*/
-
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-
 const scrollHeader = () => {
     const header = document.getElementById('header')
     this.scrollY >= 50 ? header.classList.add('bg-header')
@@ -22,10 +14,6 @@ const scrollHeader = () => {
                     }
 
 window.addEventListener('scroll', scrollHeader)
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 const sections = document.querySelectorAll('section[id]')
     
@@ -47,11 +35,6 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== DARK LIGHT THEME ===============*/ 
-
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     orifin: 'top',
     distance: '60px',
@@ -59,7 +42,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 sr.reveal(`.home__img, .gallery__container, .footer__logo, .footer__description,
-            .footer__content, .footer__info`)
+            .footer__content, .footer__info, .platters .section__subtitle, .platters .section__title`)
 sr.reveal(`.home__data`, {origin: 'bottom'})
 sr.reveal(`.about__data`, {origin: 'left'})
 sr.reveal(`.about__img`, {origin: 'right'})

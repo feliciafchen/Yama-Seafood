@@ -17,8 +17,8 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
-  --title-font: "Lora", serif;
-  --subtitle-font: "Dancing Script", cursive;
+  --title-font: "Kumbh Sans", serif;
+  --subtitle-font: "Kumbh Sans", cursive;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -641,7 +641,7 @@ img {
 
     .gallery__button{
         font-size: var(--normal-font-size);
-        padding: 8px 8px 8px 24px;
+        padding: 8px 15px 8px 24px;
         margin-left: -13rem;
     }
 
