@@ -51,3 +51,15 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    orifin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+sr.reveal(`.home__img, .footer__logo, .footer__description,
+            .footer__content, .footer__info`)
+sr.reveal(`.home__data`, {origin: 'bottom'})
+sr.reveal(`.about__data`, {origin: 'left'})
+sr.reveal(`.about__img`, {origin: 'right'})
+sr.reveal(`.platters__card`, {interval: 100})
